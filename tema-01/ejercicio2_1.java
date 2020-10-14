@@ -1,5 +1,5 @@
 /**
-	* Ejercicio 1 Tema 1
+	* Ejercicio 2 Tema 1
 	* Muestra tu nombre, calle y número de teléfono por pantalla
 	* @author Sergio García
 	*/
