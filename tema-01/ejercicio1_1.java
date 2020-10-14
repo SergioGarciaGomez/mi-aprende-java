@@ -5,6 +5,6 @@
 	*/
 public class ejercicio1_1 { // Clase principal
 	public static void main(String[] args) {
-		System.out.println("Sergio García")
+		System.out.println("Sergio García");
 	}
 }
