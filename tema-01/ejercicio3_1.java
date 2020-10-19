@@ -3,6 +3,7 @@
 	* Muestra 10 palabras en inglés y su traducción
 	* @author Sergio García
 	*/
+	
 public class ejercicio3_1 { // Clase principal
 	public static void main(String[] args) {
 		System.out.printf("%-10s      %-10s\n",  "Sun",  "Sol");
