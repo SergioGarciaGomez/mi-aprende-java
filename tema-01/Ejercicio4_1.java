@@ -3,7 +3,7 @@
 	* Muestra el horario de clase
 	* @author Sergio García
 	*/
-public class ejercicio4_1 { // Clase principal
+public class Ejercicio4_1 { // Clase principal
 	public static void main(String[] args) {
 		System.out.println("-----------------------------------------------");
 		System.out.println("| Lunes |  Martes | Miérc. | Jueves | Viernes |");
