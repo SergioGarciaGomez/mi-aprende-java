@@ -3,7 +3,7 @@
 	* Muestra una pirámide
 	* @author Sergio García
 	*/
-public class ejercicio6_1 { // Clase principal
+public class Ejercicio6_1 { // Clase principal
 	public static void main (String[] args) {
 		System.out.println("    *");
 		System.out.println("   ***");
