@@ -3,6 +3,7 @@
 	* Muestra el horario de clase
 	* @author Sergio García
 	*/
+
 public class Ejercicio4_1 { // Clase principal
 	public static void main(String[] args) {
 		System.out.println("-----------------------------------------------");
