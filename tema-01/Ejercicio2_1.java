@@ -3,6 +3,7 @@
 	* Muestra tu nombre, calle y número de teléfono por pantalla
 	* @author Sergio García
 	*/
+
 public class Ejercicio2_1 { // Clase principal
 	public static void main(String[] args) {
 		System.out.println("Sergio García");
