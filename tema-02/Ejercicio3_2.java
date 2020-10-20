@@ -1,8 +1,8 @@
 /**
-	* Ejercicio 3 Tema 2
-	* Muestra mi nombre, dirección y teléfono por pantalla
-	* @author Sergio García
-	*/
+ * Ejercicio 3 Tema 2
+ * Muestra mi nombre, dirección y teléfono por pantalla
+ * @author Sergio García
+ */
 	
 public class Ejercicio3_2 { // Clase principal
 	public static void main(String[] args) {
