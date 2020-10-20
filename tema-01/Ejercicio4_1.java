@@ -1,8 +1,8 @@
 /**
-	* Ejercicio 4 Tema 1
-	* Muestra el horario de clase
-	* @author Sergio García
-	*/
+ * Ejercicio 4 Tema 1
+ * Muestra el horario de clase
+ * @author Sergio García
+ */
 
 public class Ejercicio4_1 { // Clase principal
 	public static void main(String[] args) {
