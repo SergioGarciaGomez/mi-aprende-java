@@ -1,8 +1,8 @@
 /**
-	* Ejercicio 4 Tema 2
-	* Conversor de euros a pesetas
-	* @author Sergio García
-	*/
+ * Ejercicio 4 Tema 2
+ * Conversor de euros a pesetas
+ * @author Sergio García
+ */
 	
 public class Ejercicio4_2 { // Clase principal
 	public static void main(String[] args) {
