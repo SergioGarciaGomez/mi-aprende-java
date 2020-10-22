@@ -5,7 +5,7 @@
  */
 
 public class Ejercicio1_1 { // Clase principal
-	public static void main(String[] args) {
-		System.out.println("Sergio García");
-	}
+  public static void main(String[] args) {
+    System.out.println("Sergio García");
+  }
 }
