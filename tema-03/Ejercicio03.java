@@ -7,11 +7,11 @@ public class Ejercicio03 { // Clase principal
   public static void main(String[] args) {
     String linea;
     /* Lee el número de pesetas para convertir a euros */
-    System.out.print("Introduce el número de euros que quieres convertir a pesetas: ");
+    System.out.print("Introduce el número de pesetas que quieres convertir a euros: ");
     linea = System.console().readLine();
-    double euros = Double.parseDouble(linea);
-    /* Convierte a pesetas */
-    int pesetas = (int)(euros*166.9);
-    System.out.printf("%.2f euros son %d pesetas.", euros, pesetas);
+    int pesetas = Integer.parseInt(linea);
+    /* Convierte a euros */
+    double euros = (pesetas / 166.9);
+    System.out.printf("%d pesetas son %.2f euros.", pesetas, euros);
   }
 }
