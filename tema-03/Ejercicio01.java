@@ -3,7 +3,6 @@
  * Pide 2 números y realiza multiplicación
  * @author Sergio García
  */
-	
 public class Ejercicio01 { // Clase principal
   public static void main(String[] args) {
     String linea;
