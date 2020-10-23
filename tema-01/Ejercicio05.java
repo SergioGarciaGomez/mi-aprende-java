@@ -1,6 +1,6 @@
 /**
  * Ejercicio 5 Tema 1
- * Muestra el horario de clase
+ * Muestra el horario de clase con colores
  * @author Sergio García
  */
 public class Ejercicio05 { // Clase principal
