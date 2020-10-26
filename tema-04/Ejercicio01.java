@@ -17,7 +17,7 @@ public class Ejercicio01 { // Clase principal
       case "martes":
         System.out.print("El martes a primera hora hay Programación");
         break;
-      case "miércoles":
+      case "miercoles":
         System.out.print("El miércoles a primera hora hay Programación");
         break;
       case "jueves":
