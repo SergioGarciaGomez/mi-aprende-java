@@ -14,7 +14,7 @@ public class Ejercicio08 { // Clase principal
     double nota3 = Double.parseDouble(System.console().readLine());
     /* Calcula la media de las 3 notas */
     
-    if ((nota1 < 0)  || (nota1 > 10) || (nota2 < 0) || (nota2 > 10) || (nota3 < 0) || (nota3 > 10)) { 
+    if ((nota1 < 0) || (nota1 > 10) || (nota2 < 0) || (nota2 > 10) || (nota3 < 0) || (nota3 > 10)) { 
       System.out.println("Las notas deben de ser entre 0-10");
       System.exit(0);
     } else {
