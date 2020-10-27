@@ -17,7 +17,7 @@ public class Ejercicio01 { // Clase principal
       case "martes":
         System.out.print("El martes a primera hora hay Programación");
         break;
-      case "miercoles":
+      case "miércoles":
         System.out.print("El miércoles a primera hora hay Programación");
         break;
       case "jueves":
@@ -26,7 +26,7 @@ public class Ejercicio01 { // Clase principal
       case "viernes":
         System.out.print("El viernes a primera hora hay Formación y Orientación Laboral");
         break;
-      case "sabado":
+      case "sábado":
         System.out.print("El sábado no hay clases");
         break;
       case "domingo":
