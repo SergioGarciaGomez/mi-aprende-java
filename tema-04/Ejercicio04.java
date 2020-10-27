@@ -14,7 +14,7 @@ public class Ejercicio04 { // Clase principal
     int horasTrabajadas = Integer.parseInt(System.console().readLine());
     /* Calcula el sueldo total, mirando antes si hay horas extras o no */
     
-    if (horasTrabajadas <= 40) {
+    if (horasTrabajadas <= 40 && horasTrabajadas >= 0) {
       sueldoTotal = horasTrabajadas * eurosHora;
       System.out.printf("El sueldo para %d horas de trabajo es de %d euros", horasTrabajadas, sueldoTotal);
     }
