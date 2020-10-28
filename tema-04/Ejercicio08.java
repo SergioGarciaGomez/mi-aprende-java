@@ -24,15 +24,15 @@ public class Ejercicio08 { // Clase principal
     
     double media = (nota1 + nota2 + nota3) / 3;
     
-    if ((media >= 0) && (media < 5 )) {
+    if (media < 5) {
       System.out.printf("Como tu media es %.2f tienes un insuficiente, estudia más para la próxima vez.", media);
-    } else if ((media >= 5) && (media < 6 )) {
+    } else if (media < 6 ) {
       System.out.printf("Como tu media es %.2f tienes un suficiente, deberías estudiar más.", media);
-    } else if ((media >= 6) && (media < 7 )) {
+    } else if (media < 7 ) {
       System.out.printf("Como tu media es %.2f tienes un bien, no te confíes.", media);
-    } else if ((media >= 7) && (media < 9 )) {
+    } else if (media < 9 ) {
       System.out.printf("Como tu media es %.2f tienes un notable, ¡sigue así!.", media);
-    } else if ((media >= 8) && (media < 10 )) {
+    } else if (media < 10 ) {
       System.out.printf("Como tu media es %.2f tienes un sobresaliente, ¡trimestre casi perfecto!.", media);
     } else if (media == 10 ) {
       System.out.printf("Como tu media es %.2f tienes un sobresaliente, ¡trimestre perfecto, sigue así!.", media);
