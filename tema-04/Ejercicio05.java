@@ -16,7 +16,7 @@ public class Ejercicio05 { // Clase principal
     if (a == 0) {
       System.out.print("No tiene solución.");
     } else {
-      System.out.print(" x = " + (-b / a));
+      System.out.print("x = " + (-b / a));
     }
   }
 }
