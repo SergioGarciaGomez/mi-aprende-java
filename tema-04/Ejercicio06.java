@@ -4,10 +4,10 @@
  * @author Sergio García
  */
 public class Ejercicio06 { // Clase principal
-  public static double g = 9.81;
   public static void main(String[] args) {
     System.out.print("Introduzca la altura en metros de donde va a caer el objeto: ");
     double h = Double.parseDouble(System.console().readLine());
+    final double g = 9.81;
     double t = Math.sqrt(2 * h / g);
     System.out.printf("Desde los %.2f metros de altura, el objeto tarda %.2f segundos en llegar al suelo.", h, t);
   }
