@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fiesta Halloween</title>
+    <link rel="icon" href="index_files/assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="index_files/css/style.css">
+    <link rel="stylesheet" href="index_files/css/fonts.css">
+</head>
+<body>
+    <div class="all" style="transform: scale(1)">
+
+        <div class="fondo1">
+            <h1 class="titulo">HAS SIDO ELEGIDO PARA VENIR A NUESTRA GRAN FIESTA DE HALLOWEEN</h1>   
+            <p class="subtitulo">HAZ CLICK PARA LEER LA CARTA</p>
+            <!--Onclick-->
+            <img class="marco-scroll-cerrado" src="index_files/assets/images/scroll-cerrado.png" draggable="false">
+            <img class="scroll-cerrado" src="index_files/assets/images/scroll-cerrado.png" draggable="false" onclick="Carta()">
+            <img class="carta" draggable="false">
+            <p class="textocarta">Te invitamos a la gran fiesta terrorífica que se celebrará la noche del 31 de octubre en mi casa. Obligatorio traer disfraz y venir acompañados, <del>mientras más sangre mejor</del> mientras más personas mejor. <br><br> Viene DJ Huesitos a la fiesta, el Joker, Pennywise, Chuky, Jason, Jack Skellington y demás, así que prepárate para <del>PASAR MUCHO MIEDO</del> divertirte.<br><br>Si quieres, puedes visitar la casa antes de la fiesta. Si es así, clickea en la flecha. <br><br> Invitación    escrita <del>con sangre de los <br>invitados</del>  con mucho amor. SEE YA.</p>
+            <img class="flecha" src="index_files/assets/images/flecha.png" draggable="false" onclick="Casa()">
+        </div>
+
+        <div id="segundaparte">
+
+            <section class="fog">
+                <div id="fondo2"></div>
+                <div class="fog-container">
+                    <div class="fog-img fog-img-first"></div>
+                    <div class="fog-img fog-img-second"></div>
+                </div>
+            </section>
+
+            <img class="bat" src="index_files/assets/images/bat.gif" draggable="false" onclick="CuadroTexto()"></img>
+            <p class="letracasa">Es</p>
+            
+        </div>
+    </div>
+
+    <script src="index_files/javascript/script.js"></script>
+</body>
+</html>

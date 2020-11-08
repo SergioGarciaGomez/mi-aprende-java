@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+div.all {
+    width: 100vw;
+    height: 100vh;
+}
+
+.fondo1 {
+    background: url(../assets/images/background-image-inicio.jpg);
+    background-size: cover;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+}
+
+.titulo {
+    font-family: web;
+    font-size: 3em;
+    position: fixed;
+    color: black;
+    -webkit-text-stroke: 0.00001em red;
+    width: fit-content;
+    margin-left: 35%;
+    margin-top: 10px;
+}
+
+.subtitulo {
+    font-family: web;
+    font-size: 3em;
+    color: black;
+    -webkit-text-stroke: 0.01em white;
+    text-align: center;
+    margin-top: 6%;
+    margin-left: 35%;
+}
+
+.carta {
+    position: absolute;
+    right: 16%;
+    top: 16%;
+    block-size: 85%;
+}
+
+.scroll-cerrado {
+    position: absolute;
+    right: 25%;
+    bottom: 35%
+}
+
+.marco-scroll-cerrado {
+    position: absolute;
+    right: 25%;
+    bottom: 35%;
+    box-shadow: inset red 0 0 3em;
+    border-radius: 15px;
+    opacity: 0;
+    animation:  marco-scroll-cerrado 2s infinite;
+}
+
+@keyframes marco-scroll-cerrado {
+    0% {opacity: 0}
+    60% {opacity: 0}
+    60% {opacity: 1}
+    100% {opacity: 0}
+}
+
+.textocarta {
+    max-width: 485px;
+    font-family: butcher;
+    font-size: 1.1em;
+    position: absolute;
+    color: red;
+    margin-left: 55%;
+    margin-top: 7%;
+    visibility: hidden;
+    text-align: justify;
+}
+
+.flecha{
+    visibility: hidden;
+    max-width: 7%;
+    max-height: 10%;
+    position: absolute;
+    right: 19%;
+    top: 77%;
+}
+
+.fondo2 {
+    background: url(../assets/images/background-casa.jpg);
+    background-size: cover;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.letracasa {
+    color: red;
+}
+
+.bat {
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    visibility: hidden;
+}
+
+.fog {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background: #fff;
+    visibility: hidden;
+}
+
+.fog-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.fog-img {
+    position: absolute;
+    height: 100vh;
+    width: 300vw;
+    z-index: 2;
+}
+
+.fog-img-first {
+    background: url("../assets/images/fog-1.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center;
+    animation: marquee 70s linear infinite;
+}
+
+.fog-img-second {
+    background: url("../assets/images/fog-2.png");
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: center;
+    animation: marquee 30s linear infinite;
+}
+
+@keyframes marquee {
+    0% {
+        transform: translate3d(0, 0, 0);
+    }
+
+    100% {
+        transform: translate3d(-200vw, 0, 0);
+    }
+}
