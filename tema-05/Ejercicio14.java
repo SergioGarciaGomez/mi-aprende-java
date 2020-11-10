@@ -11,7 +11,22 @@ public class Ejercicio14 { // Clase principal
     int exponente = Integer.parseInt(System.console().readLine());
     double potencia = 1;
     
+    if (exponente == 0) {
+      potencia = 1;
+    }
     
-    System.out.printf("%d^%d = %d", base, exponente, potencia);
+    if (exponente > 0) {
+      for (int i = 0; i < exponente; i++) {
+        potencia *= base;
+      }
+    }
+    
+    if (exponente < 0) {
+      for (int i = 0; i < -exponente; i++) {
+        potencia *= base;
+      }
+      potencia = 1 / potencia;
+    }
+    System.out.print( base + "^" + exponente + " = " + potencia);
   }
 }
