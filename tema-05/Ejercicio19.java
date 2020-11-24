@@ -11,7 +11,7 @@ public class Ejercicio19 { // Clase principal
     String relleno = System.console().readLine();
     int planta = 1;
     int longitudDeLinea = 1;
-    int espacios = alturaIntroducida-1;
+    int espacios = alturaIntroducida - 1;
     while (planta <= alturaIntroducida) {
       // inserta espacios
       for (int i = 1; i <= espacios; i++) {
