@@ -14,7 +14,7 @@ public class Ejercicio17 { // Clase principal
       numeroIntroducido = Integer.parseInt(System.console().readLine());
       
       if (numeroIntroducido < 0 ) {
-        System.out.print("Error. Debe introducir un número positivo.");
+        System.out.println("Error. Debe introducir un número positivo.");
       }
     } while (numeroIntroducido < 0);
     
