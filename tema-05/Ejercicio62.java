@@ -9,6 +9,7 @@
  */
 public class Ejercicio62 { // Clase principal
   public static void main(String[] args) {
+    
     System.out.print("Introduzca un número: ");
     long numeroIntroducido = Long.parseLong(System.console().readLine());
     int numerosSuerte = 0;
