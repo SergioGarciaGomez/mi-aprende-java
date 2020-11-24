@@ -8,11 +8,20 @@
  */
 public class Ejercicio40 { // Clase principal
   public static void main(String[] args) {
-    System.out.print("Introduzca la altura del rombo: ");
-    int alturaIntroducida = Integer.parseInt(System.console().readLine());
     
-    if ((alturaIntroducida < 3) || (alturaIntroducida % 2 == 0)) {
-      System.out.print("Error. Debe introducir un número impar igual o mayor a 3.");
-    } else 
+    int alturaIntroducida = 0;
+    int espaciado = 0;
+    int espaciosDelante = alturaIntroducida / 2;
+    int altura = 1;
+    
+    while ((alturaIntroducida < 3) || (alturaIntroducida % 2 == 0)) {
+      System.out.print("Introduzca la altura del rombo: ");
+      alturaIntroducida = Integer.parseInt(System.console().readLine());
+      if ((alturaIntroducida < 3) || (alturaIntroducida % 2 == 0)) {
+        System.out.println("Error. Debe introducir un número impar igual o mayor a 3.");
+      }
+    }
+    
+    while 
   }
 }
