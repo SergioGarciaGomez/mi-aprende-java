@@ -6,8 +6,9 @@
  */
 public class ej1examen { // Clase principal
   public static void main(String[] args) {
+    
     int altura = 0;
-    int espacios = 1;
+    
     while ((altura < 3) || (altura % 2) == 0) {
       System.out.print("Por favor, introduzca la altura: ");
       altura = Integer.parseInt(System.console().readLine());
