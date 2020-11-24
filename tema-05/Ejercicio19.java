@@ -1,6 +1,6 @@
 /**
  * Ejercicio 19 Tema 5
- * Pinta pirámide con altura y carácter elegidos por teclado
+ * Pinta pirámide con altura y carácter elegidos por teclado.
  * @author Sergio García
  */
 public class Ejercicio19 { // Clase principal
