@@ -8,56 +8,50 @@
  */
 public class ej4examen { // Clase principal
   public static void main(String[] args) {
-    System.out.print("Introduzca un número: ");
-    // long se puede usar para unir una cadena de números y pasarlos a String
-    long numeroIntroducido = Long.parseLong(System.console().readLine());
+    System.out.print("Introduzca un número de la longitud que quiera: ");
+    int numeroIntroducido = Integer.parseInt(System.console().readLine());
+    int digito = 0;
+    String numeroCodificado = "";
     
-    // Le da la vuelta al número introducido
-    long numero = numeroIntroducido;
-    long volteado = 0;
-    while (numero > 0) {
-      volteado = (volteado * 10) + (numero % 10);
-      numero /= 10;
-    } // while
-    
-    do {
-      long digito = volteado % 10;
-      volteado = volteado / 10;
+    while (numeroIntroducido > 0) {
+      digito = numeroIntroducido % 10;
+      numeroIntroducido /= 10;
       
-      switch ((int)digito) {
+      switch (digito) {
         case 0:
-          System.out.print("O");
+          numeroCodificado = "O" + numeroCodificado;
           break;
         case 1:
-          System.out.print("I");
+          numeroCodificado = "I" + numeroCodificado;
           break;
         case 2:
-          System.out.print("Z");
+          numeroCodificado = "Z" + numeroCodificado;
           break;
         case 3:
-          System.out.print("B");
+          numeroCodificado = "B" + numeroCodificado;
           break;
         case 4:
-          System.out.print("A");
+          numeroCodificado = "A" + numeroCodificado;
           break;
         case 5:
-          System.out.print("S");
+          numeroCodificado = "S" + numeroCodificado;
           break;
         case 6:
-          System.out.print("G");
+          numeroCodificado = "G" + numeroCodificado;
           break;
         case 7:
-          System.out.print("L");
+          numeroCodificado = "L" + numeroCodificado;
           break;
         case 8:
-          System.out.print("H");
+          numeroCodificado = "H" + numeroCodificado;
           break;
         case 9:
-          System.out.print("N");
+          numeroCodificado = "N" + numeroCodificado;
           break;
         default:
       }
-    } while (volteado > 0);
-    System.out.println();
+    }
+    
+    System.out.println("El número codificado es " + numeroCodificado + ".");
   }
 }
