@@ -1,37 +1,22 @@
 /**
- * Ejercicio 3 Examen 1
- * Ampliación del 1. Si alguno de los datos introducidos es incorrecto, 
- * el programa debe seguir preguntando hasta que se introduzca un dato correcto.
+ * Ejercicio 2 Examen 1
+ * Presupuesto para paquetes compuestos por tazas y llaveros. Pedido mínimo de 20 paquetes.
+ * Al precio final se le suma 21% de IVA. El precio de cada taza es de 4.90€ para pedidos entre 20 y 39 paquetes.
+ * 3.90€ para pedidos entre 40 y 99 paquetes. 3.20€ para pedidos de 100 o más paquetes.
+ * Estos precios son si 1, 2 o 3 colores. Si lleva más, cuestan un 20% más.
+ * Cada llavero de plástico cuesta 2€ en menos de 50 unidades y 1.50€ para pedidos de 50 o más unidades.
+ * Cada llavero metálico cuesta 3€ en menos de 50 unidades y 2.50€ para pedidos de 50 o más unidades.
+ * Suponemos que el usuario introduce los datos correctamente.
  * @author Sergio García
  */
-public class ej3examen { // Clase principal
+public class Ex08sgg2 { // Clase principal
   public static void main(String[] args) {
-    int numeroPaquetes = 0;
-    while (numeroPaquetes < 20) {
-      System.out.print("Introduzca la cantidad de paquetes que desea: ");
-      numeroPaquetes = Integer.parseInt(System.console().readLine());
-      if (numeroPaquetes < 20) {
-        System.out.println("El pedido mínimo es de 20 paquetes.");
-      }
-    }
-  
-    int numeroColores = 0;
-    while (numeroColores < 1) {
-      System.out.print("Número de colores de la impresión de la taza: ");
-      numeroColores = Integer.parseInt(System.console().readLine());
-      if (numeroColores < 1) {
-        System.out.println("El mínimo de colores es 1.");
-      }
-    }
-    
-    int tipoLlavero = 0;
-    while ((tipoLlavero < 1) || (tipoLlavero > 2)) {
-      System.out.print("1) Llavero de plástico 2) Llavero metálico: ");
-      tipoLlavero = Integer.parseInt(System.console().readLine());
-      if ((tipoLlavero < 1) || (tipoLlavero > 2)) {
-        System.out.println("Sólo tenemos dos tipos de llaveros.");
-      }
-    }
+    System.out.print("Introduzca la cantidad de paquetes que desea: ");
+    int numeroPaquetes = Integer.parseInt(System.console().readLine());
+    System.out.print("Número de colores de la impresión de la taza: ");
+    int numeroColores = Integer.parseInt(System.console().readLine());
+    System.out.print("1) Llaveros de plástico 2) Llaveros metálicos: ");
+    int tipoLlavero = Integer.parseInt(System.console().readLine());
     
     System.out.print("PROMOCIONES COMERCIALES - PRESUPUESTO\n\n");
     double precioTaza = 0;
