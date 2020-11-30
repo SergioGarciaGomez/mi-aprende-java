@@ -12,15 +12,12 @@ public class Ejercicio09 { // Clase principal
     boolean numero24 = false;
     int numero = 0;
     
-    while (!numero24) {
+    while (numero != 24) {
       numero = (int)(Math.random() * 51) * 2;
       totalNumeros++;
-      System.out.print(numero + " ");
-      
-      if (numero == 24) {
-        numero24 = true;
-        System.out.print("\n¡Ahí está el 24!\nPara encontrarlo entre los pares del 0 al 100 se han generado " + totalNumeros + " números");
-      }
+      System.out.print(numero + " "); 
     }
+    
+    System.out.print("\n¡Ahí está el 24!\nPara encontrarlo entre los pares del 0 al 100 se han generado " + totalNumeros + " números");
   }
 }
