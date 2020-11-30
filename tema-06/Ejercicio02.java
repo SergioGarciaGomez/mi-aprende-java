@@ -1,10 +1,56 @@
 /**
  * Ejercicio 2 Tema 6
- * 
+ * Realiza un programa que muestre al azar el nombre de una carta de
+ * la baraja francesa. Esta baraja está dividida en cuatro palos: picas,
+ * corazones, diamantes y tréboles. Cada palo está formado por 13 cartas,
+ * de las cuales 9 cartas son numerales y 4 literales: 2, 3, 4, 5, 6, 7,
+ * 8, 9, 10, J, Q, K y A (que sería el 1). Para convertir un número en
+ * una cadena de caracteres podemos usar String.valueOf(n).
  * @author Sergio García
  */
-public class Ejercicio01 { // Clase principal
+public class Ejercicio02 { // Clase principal
   public static void main(String[] args) {
+    String carta = "";
+    String palo= "";
+    
+    int numeroCarta = (int)(Math.random()* 13) + 1;
+    
+    switch (numeroCarta) {
+      case 1:
+        carta = "As";
+        break;
+      case 11:
+        carta = "J";
+        break;
+      case 12:
+        carta = "Q";
+        break;
+      case 13:
+        carta = "K";
+        break;
+      default:
+        carta = String.valueOf(numeroCarta);
+    } // fin switch numeroCarta
+    
+    int numeroPalo = (int)(Math.random()* 4) + 1;
+    
+    switch (numeroPalo) {
+      case 1:
+        palo = "diamantes";
+        break;
+      case 2:
+        palo = "tréboles";
+        break;
+      case 3:
+        palo = "picas";
+        break;
+      case 4:
+        palo = "corazones";
+        break;
+      default:
+    } // fin switch numeroPalo
+    
+    System.out.print(carta + " de " + palo + ".");
     
   }
 }
