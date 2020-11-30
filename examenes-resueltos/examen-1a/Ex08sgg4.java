@@ -6,7 +6,7 @@
  * el 7 por la L, el 8 por la H y el 9 por la N. 
  * @author Sergio García
  */
-public class ej4examen { // Clase principal
+public class Ex08sgg4 { // Clase principal
   public static void main(String[] args) {
     System.out.print("Introduzca un número de la longitud que quiera: ");
     int numeroIntroducido = Integer.parseInt(System.console().readLine());

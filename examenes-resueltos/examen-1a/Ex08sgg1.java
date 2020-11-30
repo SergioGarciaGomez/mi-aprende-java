@@ -4,7 +4,7 @@
  * Debe ser un número impar mayor o igual a 3. Los palos de H y A están a la mitad de la altura.
  * @author Sergio García
  */
-public class ej1examen { // Clase principal
+public class Ex08sgg1 { // Clase principal
   public static void main(String[] args) {
     
     int altura = 0;
