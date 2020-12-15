@@ -7,7 +7,6 @@
  * la pecera hay que colocar de forma aleatoria un pececito, que puede estar
  * situado en cualquiera de las posiciones que quedan en el hueco que forma el
  * rectángulo.
- * 
  * @author Sergio García
  */
 public class Ejercicio17 { // Clase principal
