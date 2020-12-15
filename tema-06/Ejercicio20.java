@@ -4,7 +4,6 @@
  * agua. La capacidad será indicada por el usuario. La cuba se llenará con una
  * cantidad aleatoria de agua que puede ir entre 0 y la capacidad máxima que
  * pueda admitir. El ancho de la cuba no varía.
- * 
  * @author Sergio García
  */
 public class Ejercicio20 { // Clase principal
