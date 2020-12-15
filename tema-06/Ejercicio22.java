@@ -23,7 +23,7 @@ public class Ejercicio22 { // Clase principal
     
     while (longitud > 1) {
       
-      // suma -1, 0 o 1 a la variable x para determinar si el próximo carácter va a la izquierda, enmedio o a la derecha
+      // suma -1, 0 o 1 a la variable x para determinar si el próximo carácter va a la izquierda, en medio o a la derecha
       x += (int)(Math.random() * 3) - 1;
       
       // pinta x - 1 espacios
