@@ -1,6 +1,6 @@
 /**
  * Ejercicio 31 Tema 6
- * Realiza el juego del “Craps”. Las reglas son las siguientes: Al comenzar la
+ * Realiza el juego del Craps. Las reglas son las siguientes: Al comenzar la
  * partida, el jugador introduce la cantidad de dinero que quiere apostar. Se
  * muestra la tirada aleatoria de dos dados. Si entre los dos dados suman 7 u
  * 11, el jugador gana la misma cantidad que apostó y termina la partida. Por ej.
@@ -15,6 +15,55 @@
 public class Ejercicio31 { // Clase principal
   public static void main(String[] args) {
     
+    System.out.print("¿Cuánto dinero quiere apostar? ");
+    int dinero = Integer.parseInt(System.console().readLine());
+    boolean juegoTerminado = false;
+    int dado1 = (int) (Math.random() * 6 + 1);
+    int dado2 = (int) (Math.random() * 6 + 1);
+    int suma = dado1 + dado2;
+    System.out.println("Dado 1: " + dado1);
+    System.out.println("Dado 2: " + dado2);
+    System.out.println("Suma: " + suma);
     
+    switch (suma) {
+      case 7:
+      case 11:
+        System.out.println("¡Enhorabuena! ¡Ha ganado otros " + dinero + " €!");
+        System.out.println("¡Ahora tiene " + dinero * 2 + " €!");
+        break;
+      case 2:
+      case 3:
+      case 12:
+        System.out.println("Lo siento, ha perdido todo su dinero");
+        break;
+      default:
+        System.out.print("Tiene que seguir tirando, debe conseguir el ");
+        System.out.println(suma + " para ganar.");
+        System.out.println("Si obtiene un 7, perderá la partida.");
+        System.out.println("Pulse INTRO para tirar los dados.");
+        System.console().readLine();
+        
+        boolean partidaTerminada = false;
+        
+        do {
+          dado1 = (int) (Math.random() * 6 + 1);
+          dado2 = (int) (Math.random() * 6 + 1);
+          System.out.println("Dado 1: " + dado1);
+          System.out.println("Dado 2: " + dado2);
+          System.out.println("Suma: " + (dado1 + dado2));
+          if ((dado1 + dado2) == suma) {
+            System.out.println("¡Enhorabuena! ¡Ha ganado otros " + dinero + " €!");
+            System.out.println("¡Ahora tiene " + dinero * 2 + " €!");
+            partidaTerminada = true;
+          } else if ((dado1 + dado2) == 7) {
+            System.out.println("Lo siento, ha perdido todo su dinero");
+            partidaTerminada = true;
+          } else {
+            System.out.println("Continúe jugando.");
+            System.out.println("Pulse INTRO para tirar los dados.");
+            System.console().readLine();
+          }
+        } while (!partidaTerminada);
+    }
   }
 }
