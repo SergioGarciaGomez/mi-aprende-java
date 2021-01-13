@@ -8,6 +8,21 @@
  */
 public class Ejercicio06 { // Clase principal
   public static void main(String[] args) {
+    int[] numero = new int[15];
+    int i;
     
+    System.out.println("Introduzca números. Para continuar pulse INTRO:");
+    
+    for (i = 0; i < 15; i++) {
+      numero[i] = Integer.parseInt(System.console().readLine());
+    }
+    
+    System.out.println();
+    
+    System.out.println("Array:");
+    
+    for (i = 0; i < 15; i++) {
+      System.out.printf("|%3d  ", i);
+    }
   }
 }
