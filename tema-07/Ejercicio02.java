@@ -2,9 +2,9 @@
  * Ejercicio 2 Tema 7
  * Define un array de 10 simbolos con nombre simbolo y asigna
  * valores a los elementos seg√∫n la siguiente tabla:
- * Posici√≥n  0  1  2  3  4  5  6  7  8  9
+ * PosiciÛn  0  1  2  3  4  5  6  7  8  9
  * Valor    'a''x'      '@'   ' ''+''Q'
- * @author Sergio Garc√≠a
+ * @author Sergio GarcÌa
  */
 public class Ejercicio02 { // Clase principal
   public static void main(String[] args) {

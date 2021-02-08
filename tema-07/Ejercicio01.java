@@ -1,12 +1,12 @@
 /**
  * Ejercicio 1 Tema 7
- * Define un array de 12 nÃºmeros enteros con nombre num y asigna los valores
- * segÃºn la tabla que se muestra a continuaciÃ³n. Muestra el contenido de todos
- * los elementos del array. Â¿QuÃ© sucede con los valores de los elementos que
+ * Define un array de 12 números enteros con nombre num y asigna los valores
+ * según la tabla que se muestra a continuación. Muestra el contenido de todos
+ * los elementos del array. ¿Qué sucede con los valores de los elementos que
  * no han sido inicializados?
- * PosiciÃ³n 0  1  2  3  4  5  6  7  8  9  10  11
+ * Posición 0  1  2  3  4  5  6  7  8  9  10  11
  * Valor   39 -2        0     14    5 120
- * @author Sergio GarcÃ­a
+ * @author Sergio García
  */
 public class Ejercicio01 { // Clase principal
   public static void main(String[] args) {
