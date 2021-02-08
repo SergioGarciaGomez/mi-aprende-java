@@ -2,7 +2,7 @@ package tema08;
 
 import java.util.Scanner;
 
-public class Ej01 {
+public class Prueba01_14 {
 
   @SuppressWarnings("resource")
   public static void main(String[] args) {
