@@ -469,6 +469,22 @@ public class Funciones {
     return resultado;
   }
 
+  /**
+   * Pide un caracter y el número de veces que se va a escribir en esa línea.
+   * 
+   * @param caracter     un caracter cualquiera (1, *, f,)
+   * @param repeticiones un número entero
+   * @return             un caracter concreto escrito x veces (repeticiones)
+   */
+  public static String linea(char caracter, int repeticiones) {
+    String resultado = "";
+    
+    for (int i = 0; i < repeticiones; i++) {
+    resultado += caracter;
+    }
+    
+    return resultado;
+  }
 
   /////////////////////////////////////////////////////////////////////////////
   /////////////////////////////////////////////////////////////////////////////
