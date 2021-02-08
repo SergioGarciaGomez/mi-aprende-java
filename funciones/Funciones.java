@@ -102,7 +102,7 @@ public class Funciones {
     }
     return volteado;
   }
-  
+
   /**
    * Devuelve un número volteado, al revés.
    * 
@@ -369,74 +369,106 @@ public class Funciones {
   }
 
   /**
-   * Pasa un número decimal a binario. 
+   * Pasa un número decimal a binario.
    *
-   * @param decimal número entero 
-   * @return número inicial pasado a binario 
-   */ 
-  //public static long decimalABinario(int decimal) { // NO FUNCIONA AUN
-    
-  /*  if (decimal == 0) {
-      return 0;
-    }
-    
-    long binario = 1;
-    
-    while (decimal > 1) {
-      binario = funciones.Funciones.pegaPorDetras(binario, decimal % 2);
-      decimal = decimal / 2;
-    }
-    
-    binario = funciones.Funciones.pegaPorDetras(binario, 1);
-    binario = funciones.Funciones.voltea(binario);
-    binario = funciones.Funciones.quitaPorDetras(binario, 1);
-    
-    return binario;
-  }
-  
-  /**
-   * Pasa un número binario a decimal.
+   * @param decimal número entero
+   * @return número inicial pasado a binario
+   */
+  // public static long decimalABinario(int decimal) { // NO FUNCIONA AUN
+
+  /*
+   * if (decimal == 0) { return 0; }
+   * 
+   * long binario = 1;
+   * 
+   * while (decimal > 1) { binario = funciones.Funciones.pegaPorDetras(binario,
+   * decimal % 2); decimal = decimal / 2; }
+   * 
+   * binario = funciones.Funciones.pegaPorDetras(binario, 1); binario =
+   * funciones.Funciones.voltea(binario); binario =
+   * funciones.Funciones.quitaPorDetras(binario, 1);
+   * 
+   * return binario; }
+   * 
+   * /** Pasa un número binario a decimal.
    *
    * @param binario número entero con 0's y 1's
+   * 
    * @return número inicial pasado a decimal
    */
   public static long binarioADecimal(long binario) {
-    
+
     if (binario == 0) {
       return 0;
     }
-    
+
     long decimal = 0;
-   
-    int bits = funciones.Funciones.digitos(binario);
-    
-    for(int i = 0; i < bits; i++) {
-      decimal += funciones.Funciones.digitoNumero(binario, bits - i - 1) * funciones.Funciones.potencia(2, i);
+
+    int bits = digitos(binario);
+
+    for (int i = 0; i < bits; i++) {
+      decimal += digitoNumero(binario, bits - i - 1) * potencia(2, i);
     }
-    
+
     return decimal;
   }
-    
+
   /**
-   * Transforma un número a palitos.
-   * 92 por ejemplo serían 9 palitos, y luego 2 separados.
+   * Transforma un número a palitos. 92 por ejemplo serían 9 palitos, y luego 2
+   * separados.
    * 
    * @param n número entero
-   * @return  número transformado a palotes
+   * @return número transformado a palotes
    */
   public static String convierteEnPalotes(int n) {
     String resultado = "";
-    for (int i = 0; i < funciones.Funciones.digitos(n); i++) {
-      for (int j = 0; j < funciones.Funciones.digitoNumero(n, i); j++) {
+    for (int i = 0; i < digitos(n); i++) {
+      for (int j = 0; j < digitoNumero(n, i); j++) {
         resultado += "|";
       }
-      if (i < funciones.Funciones.digitos(n) - 1) {
+      if (i < digitos(n) - 1) {
         resultado += "-";
       }
     }
     return resultado;
   }
-  
+
+  /**
+   * Convierte un array de enteros o un un número entero en código morse
+   * 
+   * @param n array de enteros o un número entero
+   * @return número en código morse
+   */
+  public static String convierteEnMorse(int n) {
+    String[] morse = { "_ _ _ _ _", ". _ _ _ _", ". . _ _ _", ". . . _ _", ". . . . _", ". . . . .", "_ . . . .",
+        "_ _ . . .", "_ _ _ . .", "_ _ _ _ ." };
+    String resultado = "";
+    for (int i = 0; i < digitos(n); i++) {
+      resultado += morse[digitoNumero(n, i)];
+    }
+    return resultado;
+  }
+
+  /**
+   * Transforma un número o un array de números a letras.
+   * 85 = Ocho, Cinco.
+   * 
+   * @param n número entero o array de números
+   * @return  número transformado a letras
+   */
+  public static String convierteNumerosEnPalabras(int n) {
+    String[] digitos = { "cero", "uno", "dos", "tres", "cuatro", "cinco", "seis", "siete", "ocho", "nueve" };
+    String resultado = "";
+    int i;
+    
+    for (i = 0; i < digitos(n) - 1; i++) {
+      resultado += digitos[digitoNumero(n, i)] + ", ";
+    }
+    
+    resultado += digitos[digitoNumero(n, i)];
+    return resultado;
+  }
+
 
   /////////////////////////////////////////////////////////////////////////////
   /////////////////////////////////////////////////////////////////////////////
@@ -633,4 +665,25 @@ public class Funciones {
     return a;
   }
 
+  /**
+   * Une dos arrays de números enteros.
+   * 
+   * @param a array con números enteros
+   * @param b array con números enteros
+   * @return  array a y b unidos
+   */
+  public static int[] concatenaArrays(int[] a, int[] b) {
+    int[] resultado = new int[a.length + b.length];
+    
+    for (int i = 0; i < a.length; i++) {
+      resultado[i] = a[i];
+    }
+    
+    for (int i = 0; i < b.length; i++) {
+      resultado[i + a.length] = b[i];
+    }
+    
+    return resultado;
+  }
+  
 }
