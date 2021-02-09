@@ -374,23 +374,19 @@ public class Funciones {
    * @param decimal número entero
    * @return número inicial pasado a binario
    */
-  // public static long decimalABinario(int decimal) { // NO FUNCIONA AUN
+  public static long decimalABinario(long n) {
 
-  /*
-   * if (decimal == 0) { return 0; }
-   * 
-   * long binario = 1;
-   * 
-   * while (decimal > 1) { binario = funciones.Funciones.pegaPorDetras(binario,
-   * decimal % 2); decimal = decimal / 2; }
-   * 
-   * binario = funciones.Funciones.pegaPorDetras(binario, 1); binario =
-   * funciones.Funciones.voltea(binario); binario =
-   * funciones.Funciones.quitaPorDetras(binario, 1);
-   * 
-   * return binario; }
-   * 
-   * /** Pasa un número binario a decimal.
+    long binario = 0;
+
+    for (int i = 0; n != 0; i++) {
+      binario = binario + (n % 2) * (long) Math.pow(10, i); 
+      n /= 2;
+    }
+
+    return binario;
+  }
+
+  /** Pasa un número binario a decimal.
    *
    * @param binario número entero con 0's y 1's
    * 
